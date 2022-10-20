@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --my-orange: #fe4503;
+  --bg-color: #1d1e22;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(15, 14, 17, 0.7),
+      rgba(7, 6, 6, 0.2)
+    ),
+    url(./Materials/lamps.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+  font-weight: normal;
+  color: white;
+}
+.contact {
+  border-bottom: 5px solid var(--my-orange);
+  width: 400px;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="name"],
+input[type="email"] {
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2px solid var(--my-orange);
+  background: none;
+  box-sizing: border-box;
+  color: white;
+  font-size: 2rem;
+  outline: none;
+}
+textarea {
+  width: 400px;
+  height: 100px;
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2px solid var(--my-orange);
+  background: none;
+  box-sizing: border-box;
+  color: white;
+  font-size: 2rem;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+}
+
+::placeholder {
+  color: white;
+
+  font-size: 2rem;
+}
+form {
+  background-color: none;
+}
+
+button {
+  width: 400px;
+  height: 50px;
+  background: none;
+
+  border: 2px solid var(--my-orange);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* nav for contact */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  z-index: 5;
+}
+nav > .logo {
+  color: var(--my-orange);
+  font-size: 2rem;
+}
+.menu {
+  padding-right: 3rem;
+}
+.menu > a {
+  color: var(--my-orange);
+  text-decoration: none;
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.menu > a:hover {
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e65400, 0 0 40px #e65400,
+    0 0 50px #e65400, 0 0 60px #e65400, 0 0 70px #e65400;
+}
+.name {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  main {
+    margin-top: 5vh;
+  }
+}
