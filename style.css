@@ -236,6 +236,18 @@ footer {
   color: rgb(88 199 250 / 0%);
   cursor: pointer;
 }
+.pr1 {
+  background-image: url(./Materials/pr1.jpg);
+  background-size: cover;
+}
+.pr2 {
+  background-image: url(./Materials/pr2.jpg);
+  background-size: cover;
+}
+.pr3 {
+  background-image: url(./Materials/pr3.jpg);
+  background-size: cover;
+}
 
 .card:hover {
   color: var(--my-orange);
